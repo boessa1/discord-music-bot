@@ -1,5 +1,7 @@
 module.exports = {
 	name: 'pause',
+	aliases: ["p"],
+
 	description: 'Pause command.',
 	cooldown: 5,
 	execute(message) {

@@ -4,6 +4,7 @@ const ytdl = require('ytdl-core');
 module.exports = {
 	name: 'play',
 	description: 'Play command.',
+	aliases: ["p"],
 	usage: '[command name]',
 	args: true,
 	cooldown: 5,

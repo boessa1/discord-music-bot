@@ -1,6 +1,7 @@
 module.exports = {
 	name: 'queue',
 	description: 'Queue command.',
+	aliases: ["q"],
 	cooldown: 5,
 	execute(message) {
 		const serverQueue = message.client.queue.get(message.guild.id);

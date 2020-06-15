@@ -1,6 +1,8 @@
 module.exports = {
 	name: 'volume',
 	description: 'Volume command.',
+	aliases: ["p"],
+
 	cooldown: 5,
 	execute(message, args) {
 		const { channel } = message.member.voice;

@@ -1,6 +1,8 @@
 module.exports = {
 	name: 'resume',
 	description: 'Resume command.',
+	aliases: ["r"],
+
 	cooldown: 5,
 	execute(message) {
 		const serverQueue = message.client.queue.get(message.guild.id);

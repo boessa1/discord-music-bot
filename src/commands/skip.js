@@ -1,6 +1,8 @@
 module.exports = {
 	name: 'skip',
 	description: 'Skip command.',
+	aliases: ["s"],
+
 	cooldown: 5,
 	execute(message) {
 		const { channel } = message.member.voice;

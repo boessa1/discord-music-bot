@@ -12,6 +12,14 @@ for (const file of commandFiles) {
 }
 
 client.once('ready', () => console.log('READY!'));
+client.user.setActivity("يوميات داعية فالكهف الاسود", {
+	type: "STREAMING",
+	url: "https://www.twitch.tv/aboelbara"
+  });
+
+
+
+
 client.on('message', message => {
 	if (!message.content.startsWith(client.config.prefix) || message.author.bot) return;
 	const args = message.content.slice(client.config.prefix.length).split(/ +/);
